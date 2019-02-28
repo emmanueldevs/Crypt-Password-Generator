@@ -7,7 +7,7 @@ Crypt is a password generator that can help you generate random strong and priva
 
 ![](https://github.com/emmanueldevs/Crypt-Password-Generator/blob/master/images/crypt-pad.png)
 
-Web Version Demo [Here](https://Crypt-password.com)
+Web Version Demo [Here](https://Crypt-password.firebaseapp.com)
 
 Android Version [Coming Soon]
 
@@ -30,4 +30,4 @@ Android Version [Coming Soon]
   #Coming Soon
 </p>
 
-# Enjoy a safe Web :)
+# Enjoy a safer Web 👌
