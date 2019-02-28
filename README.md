@@ -5,7 +5,7 @@ Crypt is a password generator that can help you generate random strong and priva
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) ![](https://img.shields.io/badge/For-Nigerians-brightgreen.svg)
 [![Made in Nigeria](https://img.shields.io/badge/made%20in-nigeria-008751.svg?style=flat-square)](https://github.com/acekyd/made-in-nigeria)
 
-![](https://raw.githubusercontent.com/BolajiAyodeji/netty-finder/master/img/NettyFinder.png)
+![](https://raw.githubusercontent.com/BolajiAyodeji/netty-finder/)
 
 Web Version Demo [Here](https://Crypt-password.com)
 
