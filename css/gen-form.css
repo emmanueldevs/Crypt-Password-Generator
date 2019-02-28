@@ -1,0 +1,58 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:  Crypt - Password manager 
+Version:    1.0
+Last change:    05/02/2019
+Primary use:    Company
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------*/
+.head {
+    font-family: 'Poppins', sans-serif;
+}
+ table {
+    border-collapse: collapse;
+}
+ input {
+    font-family: inherit;
+    font-size: inherit;
+}
+ #charset label:hover {
+    background-color: #F0F0F0;
+}
+ #charset td {
+    padding: 0em;
+}
+ #charset input[type=checkbox] {
+    margin: 0.5em;
+}
+ #charset label {
+    margin-left: 0.2em;
+    padding: 0.1em 0.3em 0.1em 0.3em;
+    border-radius: 0.2em;
+}
+ #charset small {
+    font-size: 70%;
+    color: #A0A0A0;
+}
+ #type td {
+    padding: 0.2em 0em;
+}
+ #type input[type=number] {
+    text-align: right;
+}
+
+ #password {
+    margin: 0.8em;
+    padding: 0.1em 0.3em;
+    background-color: #e0e0e0;
+    border-radius: 0.2em;
+    font-family: "Consolas", monospace;
+    font-size: 140%;
+}
+.btn-secondary {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);border-radius: 50px;
+    font-weight: 400;
+    padding: 13px 39px;
+    line-height: 1.5;
+}
