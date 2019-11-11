@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>⚡️ Crypt 🇳🇬 - Password Manager 🔐</title>
+        <!-- Required meta tags-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="google-site-verification" content="q1lO92OPPGPCdt1CKA9c0aC3Rp0XrxxjeBACBvTonHc"/>
+        <meta name="description" content="Crypt is a password generator that can help you generate random strong passwords.">
+        <meta name="author" content="Emmanuel Adeboje, Emmanueldevs, i_am_hemmanuel">
+        <meta name="keywords" content="Crypt, passwords, password generator, generate password, password manager, Crypt password generator, Nigeria, secure password, strong password, password encryption, i_am_hemmanuel, Emmanueldevs, Emmanuel Adeboje">
+        
+        <!-- Twitter Card-->
+        <meta name="twitter:title" content="Crypt - Password Manager">
+        <meta name="twitter:site" content="https://crypt-password.firebaseapp.com">
+        <meta name="twitter:creator" content="@i_am_hemmanuel">
+        <meta name="twitter:description" content="Crypt is a password generator that can help you generate random strong passwords.">
+        <meta name="twitter:image" content="images/crypt-pad.png">
+        <meta name="twitter:card" content="images/crypt-pad.png">
+
+        <meta property="og:image" content="images/crypt-pad.png">
+        <meta property="og:title" content="Crypt - Password Manager">
+        <meta property="og:description" content="Crypt is a password generator that can help you generate random strong passwords.">
+        <meta property="og:url" content="https://crypt-password.firebaseapp.com">
+        <meta property="og:site_name" content="Crypt - Password Manager">
+        <meta property="og:type" content="webapp">
+
+        <!-- Theme-color -->
+        <meta name="theme-color" content="#7b7b7b">
+
+        <!-- start of web manifest -->
+        <link rel="manifest" href="manifest.json">
+
+        <!-- Google Knowledge Graph card -->
+        <script type="application/ld+json">
+            {
+              "@context": "http://www.schema.org",
+              "@type": "webapp",
+              "name": "Crypt - Password Manager",
+              "url": "https://crypt-password.firebaseapp.com",
+              "logo": "https://crypt-password.firebaseapp.com/images/crypt-pad.png",
+              "description": "Crypt is a password generator that can help you generate random strong passwords."
+            }
+        </script>
+
+        <!-- Plugins CSS-->
+        <link href="css/font-face.css" rel="stylesheet" media="all">
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="all">
+        <link href="vendor/linearicons/css/linearicons.css" rel="stylesheet" media="all">
+        <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet" media="all">
+        <!-- Main CSS-->
+        <link href="css/theme.css" rel="stylesheet" media="all">
+        <link href="css/gen-form.css" rel="stylesheet" media="all">
+
+        <!-- Add to home screen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="white">
+        <meta name="apple-mobile-web-app-title" content="Crypt 🇳🇬 🔐">
+        <!-- Tile Icon for Windows -->
+        <meta name="msapplication-TileImage" content="images/icons/crypt-pad-144x144.png">
+        <meta name="msapplication-TileColor" content="#e0e0e0">
+
+        <!--Favicons-->
+        <link rel="shortcut icon" href="images/crypt-pad.png">
+        <link rel="apple-touch-icon" href="images/icons/crypt-pad-152x152.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/crypt-pad-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/crypt-pad-114x114.html">
+    </head>
+    <body>
+        <!-- Header start-->
+        <div class="section section-socials p-t-50 p-b-30">
+            <div class="container">
+                <h3 class="section-heading section-heading--center">Crypt 🔒</h3>
+                <ul class="list-socials">
+                    <li class="list-item">
+                        <a class="head" href="./" data-toggle="tooltip" title="Home">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="head" href="about.html" data-toggle="tooltip" title="About">About</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="head nav-link" href="#contact" data-toggle="tooltip" title="Blog">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Header end-->
+
+        <!-- Main Section-->
+        <section class="section section-generate-form section-about bg-gray-50">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6  m-t-60">
+                        <form class="section-form-group m-b-50" action="#" method="get" onsubmit="doGenerate(event);" id="contact-form" role="form" data-toggle="validator" novalidate="true">
+                            <div id="charset" class="section" style="margin:0.8em 0em">
+                                <table style="line-height:1.5">
+                                    <tbody>
+                                        <tr>
+                                            <div class="input-item form-group">
+                                                <div class="help-block with-errors"></div>
+                                                <input class="au-input au-input-pill" type="text" id="name" name="name" placeholder="Enter Username" required data-error="Please input your Username.">
+                                            </div>
+                                        </tr>
+                                        <tr>
+                                            <div class="input-item form-group">
+                                                <td><input class="styled-checkbox" type="checkbox" id="custom"></td>
+                                                <td style="width: 100%;"><label for="custom"> Password:</label> <input class="au-input au-input-pill" type="text" style="width:100%" id="customchars" placeholder="Custom Password" oninput="document.getElementById('custom').checked=true;"></td>
+                                            </div>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="section">
+                                <table id="type">
+                                    <tbody>
+                                        <tr>
+                                            <div class="input-item form-group">
+                                                <td><input type="radio" name="type" id="by-length" checked="checked"> <label for="by-length">Length:&#xA0;</label></td>
+                                                <td><input class="au-input au-input-pill" type="number" min="0" value="10" step="1" id="length" style="width:5em" oninput="document.getElementById('by-length').checked=true;"> characters</td>
+                                            </div>
+                                        </tr>
+                                        <tr>
+                                            <div class="input-item form-group">
+                                                <td><input type="radio" name="type" id="by-entropy"> <label for="by-entropy">Entropy:</label>&#xA0;</td>
+                                                <td><input class="au-input au-input-pill" type="number" min="0" value="128" step="any" id="entropy" style="width:5em" oninput="document.getElementById('by-entropy').checked=true;"> bits</td>
+                                            </div>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p style="max-width:unset; line-height:1.35; word-break:break-all">
+                                <div>
+                                    Pass Phrase: <span id="password"></span>
+                                </div>
+                                <div>
+                                    <input class="au-btn-pill au-btn-primary" type="submit" value="Generate">
+                                    <input class="btn btn-secondary" type="button" value="Copy" id="copy-button" onclick="doCopy();" disabled="disabled">
+                                </div>
+                            </p>
+                            <p id="statistics" class="lowlight">&#xA0;</p>
+                        </form>
+                    </div>
+                    <div class="col-md-6 m-t-60">
+                        <h3 class="section-heading m-b-25">What is Crypt?</h3>
+                        <p class="type-gray-1 m-b-40">
+                            Crypt is a password generator that helps you generate strong  and random passwords by interpolating the password you provide with random characters you selected, by using a secure cryptographic algorithm.
+                        </p>
+                        <p class="type-gray-1 m-b-40">
+                            Not to bore you, Security and Privacy are hot topics of concern at the moment, so that is why we had to look into the way we approach security and privacy, Crypt allow you to generate a secure pass phrase on your browser without having to tranfer or save any information to any server, making the generated passwords private
+                        </p>
+                        <ul class="v-list list-text-icon m-b-20">
+                            <li class="iconbox iconbox-style-2">
+                                <i class="iconbox-icon fa fa-check"></i>
+                                <span class="iconbox-text">Model Design, Crypt is engineered for you to be in control</span>
+                            </li>
+                            <li class="iconbox iconbox-style-2">
+                                <i class="iconbox-icon fa fa-check"></i>
+                                <span class="iconbox-text">Utmost Privacy, everything is done on your browser</span>
+                            </li>
+                            <li class="iconbox iconbox-style-2">
+                                <i class="iconbox-icon fa fa-check"></i>
+                                <span class="iconbox-text">Secure, Crypt has a robust pool of characters to choose from</span>
+                            </li>
+                        </ul>
+                        <a class="au-btn au-btn-pill au-btn-icon" href="about.html">
+                            <span class="btn-text">LEARN MORE</span>
+                            <i class="btn-icon fa fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Main Section-->
+
+        <!-- Social start-->
+        <div class="section section-socials p-t-50 p-b-50" id="contact">
+            <div class="container">
+                <h3 class="section-heading section-heading--center">Connect</h3>
+                <ul class="list-socials">
+                    <li class="list-item">
+                        <a class="fa fa-facebook" href="http://www.facebook.com/olamilekan.adeboje.3" data-toggle="tooltip" title="Facebook"></a>
+                    </li>
+                    <li class="list-item">
+                        <a class="fa fa-twitter" href="https://www.twitter.com/i_am_hemmanuel" data-toggle="tooltip" title="Twitter"></a>
+                    </li>
+                    <li class="list-item">
+                        <a class="fa fa-instagram" href="https://www.instagram.com/i_am_hemmanuel" data-toggle="tooltip" title="Instagram"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Social end-->
+
+        <!-- Footer start-->
+        <footer class="section section-footer p-t-80 p-b-60">
+            <div class="container">
+                <div class="article-share">
+                    <span class="p-b-25">SHARE:</span>
+                    <ul class="h-list" style="line-height: 17px!important;">
+                        <li class="social-item">
+                            <div class="fb-share-button p-b-20" 
+                                data-href="https://crypt-password.firebaseapp.com" data-layout="button_count">
+                            </div>
+                        </li>
+                        <li class="social-item">
+                            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button p-t-80" data-text="Hello there! I just tried out #CryptNG and it helped me generate a very secure and private password with ease. Some cool app developed by @i_am_hemmanuel" data-url="https://crypt-password.firebaseapp.com" data-hashtags="CryptNG, CryptPasswordManager, CryptSecurePasswordGeneration" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </li>
+                    </ul>
+                </div>
+                <p class="footer-text-copy">
+                    <span>Built with</span>
+                    <span class="fa fa-heart"></span>
+                    <span>in Nigeria By <a href="https://emmanueldevs.github.io">Emmanuel Adeboje</a></span>
+                </p>
+                <p class="footer-text-copy">Copyright &copy
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>.
+                </p>
+            </div>
+        </footer>
+        <!-- Footer end-->
+        <script src="js/manager.js"></script>
+        <!-- Jquery JS-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <!-- Bootstrap JS-->
+        <script src="vendor/bootstrap/bootstrap.min.js"></script>
+        <!-- custom install button -->
+        <script src="js/install-button.js"></script>
+        <!-- facebook sdk.js -->
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <!-- end facebook sdk.js -->
+        <!-- register service worker -->
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('/service-worker.js')
+                        .then(function() { 
+                            console.log("Service Worker Registered! Cheers to PWA Fire!"); 
+                        });
+                });
+            }
+        </script>
+        <!-- end of service worker -->
+    </body>
+</html>
+<!-- end document-->

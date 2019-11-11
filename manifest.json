@@ -1,0 +1,54 @@
+{
+  "background_color": "#e0e0e0",
+  "display": "standalone",
+  "orientation":"portrait",
+  "theme_color": "#7b7b7b",           
+  "short_name": "Crypt",
+  "name": "⚡️ Crypt 🇳🇬 - Password Manager 🔐",
+  "description": "Crypt is a password generator that can help you generate random strong passwords",
+  "lang": "en-US",
+  "icons": [
+  {
+    "src": "images/icons/crypt-pad-72x72.png",
+    "sizes": "72x72",
+    "type": "image/png"
+  },
+  {
+    "src": "images/icons/crypt-pad-96x96.png",
+    "sizes": "96x96",
+    "type": "image/png"
+  },
+  {
+    "src": "images/icons/crypt-pad-128x128.png",
+    "sizes": "128x128",
+    "type": "image/png"
+  },
+  {
+    "src": "images/icons/crypt-pad-144x144.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  },
+  {
+    "src": "images/icons/crypt-pad-152x152.png",
+    "sizes": "152x152",
+    "type": "image/png"
+  },
+  {
+    "src": "images/icons/crypt-pad-192x192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  },
+  {
+    "src": "images/icons/crypt-pad-384x384.png",
+    "sizes": "384x384",
+    "type": "image/png"
+  },
+  {
+    "src": "images/icons/crypt-pad-512x512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  } 
+  ],
+  "start_url": "index.html?launcher=true",
+  "scope": "/"
+}
